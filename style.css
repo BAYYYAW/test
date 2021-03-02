@@ -44,15 +44,14 @@ body{
 .content{
   justify-content: center;
   align-items: center;
-  padding: 0px 17px;
+  overflow: hidden;
 }
 
 .content a{
   display: block;
   text-decoration: none;
   color: white;
-  padding: 13px;
-  padding-left: 40px;
+  padding: 13px 30px;
   font-size: 1.9em;
 }
 
@@ -78,17 +77,19 @@ body{
 h2{
   display: none;
   position: fixed;
-  bottom: 40px;
+  bottom: 0;
   padding: 20px;
   color: white;
   background: #252424;
-  left: 99%;
-  border-bottom-right-radius: 90px;
+  left: 0%;
+  transform: translate(4.3cm, -2cm);
+  border-bottom-right-radius: 27px;
+  border-top-right-radius: 27px;
 }
 
 @media screen and (max-width: 770px) {
-  .content{
-    padding: 0px 40px;
+  .content a{
+    padding: 20px 60px;
   }
   .container{
     transform: translateX(-100%);
