@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body{
+  background: white;
+}
+
 .container{
   display: flex;
   background: #252424;
@@ -40,6 +44,7 @@
 .content{
   justify-content: center;
   align-items: center;
+  padding: 0px 17px;
 }
 
 .content a{
@@ -68,4 +73,30 @@
   width: 200%;
   color: white;
   padding: 20px;
+}
+
+h2{
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  padding: 20px;
+  color: white;
+  background: #252424;
+  left: 99%;
+  border-bottom-right-radius: 90px;
+}
+
+@media screen and (max-width: 770px) {
+  .content{
+    padding: 0px 40px;
+  }
+  .container{
+    transform: translateX(-100%);
+  }
+  h2{
+    display: block;
+  }
+  h1{
+    display: none;
+  }
 }
